@@ -36,6 +36,8 @@ d["description"] = "Lu-Ray – eine Kopie von Advanced XRay, mit Mond-Symbol sta
 d["authors"] = ["ErrorMikey (Advanced XRay)", "Luna-OS (Lu-Ray)"]
 d["contact"] = {"sources": "https://github.com/Luna-OS/lu-ray"}
 d["icon"] = "assets/xray/icon.png"
+# Gleiche Klassen/Mixins wie das Original -> klare Fehlermeldung statt Mixin-Crash
+d["breaks"] = {"xray": "*"}
 json.dump(d, open(p, "w"), indent=2, ensure_ascii=False)
 PY
 
